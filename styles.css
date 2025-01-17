@@ -1,0 +1,272 @@
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+
+    background-color: #3FA6C3;
+    font-family: "Luckiest Guy", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.herobox {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.herobox img {
+    width: 220px;
+    margin: 0 auto;
+}
+
+#slogan {
+    display: none;
+    font-size: 1.12rem;
+    font-style: italic;
+}
+
+.capo {
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+}
+
+#help-button svg {
+    width: 20px;
+}
+
+#help-button:hover {
+    cursor: pointer;
+}
+
+#help-button:hover #help-question{
+    fill: white;
+}
+
+.help-clicked {
+    fill: white;
+}
+
+
+#help {
+    width: fit-content;
+    margin: 0 auto 12px;
+    padding: 10px 20px;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 20px;
+}
+
+#help h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#help p {
+    margin: 0;
+    font-size: 1.12rem;
+}
+
+
+.button-group {
+    max-width: 320px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.capoot-button {
+    width: 130px;
+    padding: 8px 0 2px;
+    box-sizing: border-box;
+
+    background-color: rgba(217, 217, 217, 0.5);
+    border: 2.5px solid black;
+
+    font-size: 1.35rem;
+    text-align: center;
+
+    transition: border 0.5s;
+}
+
+.capoot-button:hover, 
+.capoot-radio:active+label, .capoot-radio:checked+label  {
+    cursor: pointer;
+
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+    letter-spacing: 0.1rem;
+
+    transition: color 0.1s, -webkit-text-stroke 0.25s;
+}
+
+.capoot-button:active, .capoot-button:checked,
+.capoot-radio:active+label, .capoot-radio:checked+label {
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+    font-size: 1.6rem;
+
+    transition: border 0.15s ease-in-out;
+}
+
+.capoot-radio:active+label, .capoot-button:active {
+    letter-spacing: 0.15rem;
+    transition: 0.15s ease-in-out;
+}
+
+#powerchords {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 430px;
+}
+
+.note {
+    width: 70px;
+    height: 70px;
+    padding-top: 10px;
+    margin: 8px 10px;
+
+    font-size: 2rem;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: rgba(217, 217, 217, 0.5);
+
+    transition: border 0.3s, font-size 0.5s, padding-top 0.5s;
+}
+
+.note:hover, .note:active, .note:focus {
+    color: white;
+    -webkit-text-stroke: 1.8px black;
+    font-size: 2.25rem;
+    transition: color 0.1s, -webkit-text-stroke 0.15s;
+}
+
+.note:active, .note:focus {
+    padding-top: 8px;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 2.25rem;
+    letter-spacing: 0.05rem;
+    transition: 0.2s ease-in-out;
+}
+
+.note:active {
+    font-size: 2.75rem;
+    transition: 0.1s ease-in-out;
+}
+
+.display {
+    min-height: 52px;
+    max-width: 450px;
+    margin: 10px auto;
+    padding: 10px 5px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid black;
+    background-color: rgba(217, 217, 217, 0.5);
+}
+
+.hide {
+    display: none;
+}
+
+.note-user {
+    line-height: 100%;
+    margin: 0 7px;
+    vertical-align: middle;
+    color: white;
+    -webkit-text-stroke: 1.8px black;
+    font-size: 2.4rem;
+}
+
+.dots {
+    max-width: 90px;
+}
+
+#fret {
+    width: 70px;
+    height: 70px;
+    padding-top: 10px;
+    align-content: center;
+
+    border: 2px solid black;
+    background-color: rgba(217, 217, 217, 0.5);
+}
+
+.note-user-extra {
+    font-size: 3rem;
+}
+
+#result-display {
+    min-height: 75px;
+}
+
+#result p {
+    max-width: 450px;
+    margin: 10px auto 50px;
+    padding: 15px 15px 10px;
+
+    background-color: rgba(217, 217, 217, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+#result footer img {
+    max-width: 160px;
+}
+
+#result footer input {
+    padding: 0;
+    height: 30px;
+}
+
+/*Media Queries*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    #slogan {
+        display: block;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (min-height: 750px) {
+    .herobox {
+        max-width: 600px;
+        transform: scale(1.1);
+        transition: transform 0.15s linear;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  
+
+}
